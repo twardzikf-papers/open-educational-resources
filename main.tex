@@ -1,0 +1,802 @@
+\documentclass[a4paper]{article}
+
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2.5cm,right=2.5cm,marginparwidth=1.75cm]{geometry}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\setlength{\parskip}{0.08cm}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\l@section}{1.0em}{0.2em}{}{} % makes vertical spaces between spaces in ToC smaller 
+\makeatother
+
+\title{\setlength{\parskip}{3cm}
+\textbf{Information, Transfer, Networks: \\
+Open Educational Resources } \\
+and their potential to provide\\
+a comprehensive overhaul \\
+of the education sector\\
+through clear licensing terms in the Digital Single Market}
+
+\author{\setlength{\parskip}{2cm} 
+Filip Twardzik\\
+Kristina Radeva \\
+Mateusz Kedzierski\\
+Stefan Kubisa\\
+V, S.}
+
+
+\date{\setlength{\parskip}{2cm}
+\textbf{Technical University of Berlin}\\
+Faculty IV\\
+Information Systems Engineering\\
+Information Governance\\
+\setlength{\parskip}{5cm}
+\today}
+
+
+\begin{comment}
+\frame{% []
+Logos of all OER resources:\\
+2016 MERLOT\\
+Flatworld Knowledge\\
+Open CourseWare Consortium\\
+Community College Consortium\\
+Connexions Content Commons\\
+Discover ED (CCLearn)\\
+}
+3. Definition
+online capabilities internet 1.0 have expanded to include the option of OER
+what
+why MIT
+how
+options for us
+what this means for us
+what this means for the rest of the planes
+
+Unfortunately not all people have the same education opportunities, as not all people have access to the same resources. Free resources are in fact the only resources that some have at their disposal. OER are globally accessible and free of charge for access, making them a great way to obtain information and gain knowledge.
+
+Nevertheless there are some challenges that need to be faced, such as copyright issues, since the publisher or the author of the resource needs to make sure they have the rights for it. Another challenge would be quality assurance, as with the growing amounts of resources it is hard to filter the good and relevant ones. Sustainability, interoperability and crediting work are further aspects that require work in order for the OER to be successfully utilized and spread.
+
+    %Creative Commons helps to share your knowledge without the legal concern. A CC license is one of the public copyright licenses that enable free distribution of a copyrighted work, giving people the right to share, use, and build upon a work that they have created.
+    % OER are learning and teaching materials that can be freely accessed and used, meaning you can download a resource and share it with colleagues and students. OER often have a Creative Commons license that shows how the material may be used, adapted and shared.
+        % Copyright is a reserved right notice concerning any work that can be copyrighted. Copyleft symbolizes the right to use, study or modify a copyrighted work of an author, with the permission explicitly given from them, and thus you may be able to download a resource, edit it in some way, and then re-post it as a remixed work.
+        %They come in many forms such as textbooks, videos, online courses and numerous others. This is of great benefit, since people can learn in various ways and have the opportunity to choose their favored type of learning and study according to their own pace and convenience. 
+        
+\end{comment}
+
+\begin{document}
+\maketitle
+\newpage
+
+\abstract{
+In this paper, Open Educational Resources are analyzed in the context of the Digital Single Market. Their origins, challenges and application in education are examined and subsequently several initiatives are characterized under aspects of their content, specific intent and current licensing. Later sections describe the copyright reform and following debate about methods of enforcement, aiming to facilitate fair remuneration of rightholders through a contract adjustment mechanism, transparency obligations and content recognition technologies. As a final statement of the purpose of OER and their outstanding potential to facilitate education worldwide, it is to note that the Digital Single Market under clear licensing terms offers the right digital environment to flourish in a new, effective and purposeful form to conduct the implementation of education across the EU through cross-border usage in classrooms, university halls, but also personal study that all could result with claim to attribution by diploma while requiring no capital investment but time and effort. \\
+
+\begin{center}
+\textbf{Kurzfassung}
+\end{center}
+
+In dieser Forschungsarbeit werden offene Bildungsressourcen im Kontext des digitalen Binnenmarkts analysiert. Ihr Ursprung, ihre Herausforderungen und ihre Anwendung in der Bildung werden untersucht und anschließend werden mehrere Initiativen unter inhaltlichen Aspekten, der konkreten Absicht und deren aktuellen Lizenzierung charakterisiert. Spätere Abschnitte beschreiben die Urheberrechtsreform und die anschließende Diskussion über Durchsetzungsmethoden, die eine gerechte Vergütung der Rechteinhaber durch einen Vertragsanpassungsmechanismus, Transparenzverpflichtungen und die Anwendung von Inhaltserkennungstechnologien ermöglichen soll. Als abschließende Aussage zum Zweck der offenen Bildungsressourcen und ihrem hervorragenden Potential, Bildung weltweit zu ermöglichen, ist festzustellen, dass der digitale Binnenmarkt unter klaren Lizenzbedingungen das richtige digitale Umfeld bietet, um in einer neuen, effektiven und zielgerichteten Form die Umsetzung der Bildung in der gesamten EU durch grenzüberschreitende Nutzung in Klassenzimmern und Universitätshallen, aber auch persönliche Studien zu fördern, die alle mit dem Anspruch auf Zuerkennung eines Diploms einhergehen könnten, ohne dass dafür Kapitalinvestitionen, sondern nur Zeit und Aufwand erforderlich wären.}
+
+
+
+\newpage 
+\tableofcontents 
+\newpage 
+
+\section{Introduction}
+The Internet exhibits a disruptive influence on the way we as the global society create, store, share and evaluate knowledge. Although the entry threshold for acquisition of information was never before this low, questions of knowledge quality, accessibility, availability and discoverability do not yield any clear answer or solution. These problems are being addressed by the concept of Open Education Resources (OER), the aim of which is to ``support educational transformation \cite{basicguide}.'' OER are defined as ``any educational resources (including curriculum maps, course materials, textbooks, streaming videos, multimedia applications, podcasts, and any other materials that have been designed for use in teaching and learning) that are openly available for use by educators and students, without an accompanying need to pay royalties or license fees \cite{basicguide}.'' This definition, although broad in encompassing different media, points in the direction of the main challenges of OER: openness and accessibility. Further important questions include, but are not limited to, the aspects of discoverability, quality assurance and sustainability.\\
+
+\noindent
+E-Learning-Services have become the second major factor in the midst of higher education when it comes to acquiring the needed knowledge, right after the traditional method of a book, lecturer and academic work. The field has expanded and thus made way for the digital era, in which the Internet can support learning and develop the bonuses of distance education. This paper doesn't cover the topic of online learning, but as far as open educational resources go, it is important to also mention the overwhelming digital contribution. Authors Organero, Kloos and Merino \cite{el-1} wrote a paper on next-generation e-learning systems which are changing the environment of learning with that of the student and the instructor, described as two new architectures, express their needs. According to Alas and Guan \cite{el-2}, online learning resources are a key activity in the times of big data, cloud computing and semantic web in supplying students with new learning processes to create, extract and improve their knowledge, which is ``flexible in terms of resources adoption, knowledge acquisition, and technological implementation \cite{el-2}.'' Freitas and Oliver \cite{el-3} did a case study in higher education institutions, using five different ways to apply e-content and e-learning policies on them and measuring how they affect the already established system in the field. \\
+
+\noindent
+In this paper, the OpenCourseWare project of the MIT council on Educational Technology serves as precursor and cradle for the creation of Open Educational Resources the way we find them existing today. Hereafter the complexity of sustainability is discussed, which results in numerous funding models as well as other models that contribute to OER, each of them being presented and explained, as well as what benefits and challenges these online materials face. In section \ref{higher-ed}, it is explained how these resources are used and applied in schools from 1st to 12th grade, and later in higher education. Further, a variety of initiatives and organizations is examined in order to display different ways of facing the above mentioned challenges and enhancing relevance and utility of OER in the field of education. These include licensing models, content management software, open online courses and different approaches to the subject of openness. \\ 
+
+\noindent
+The main focus of the paper is set on the Directive of the European Parliament and of the Council on Copyright in the Digital Single Market, which presents the issue from the commissions and the counter movements perspective. To this extent, our work presents an assessment of the proposal of articles 3, 11 and 13 and contributes to an implementation of fair attribution of rightsholders. \\
+
+\noindent
+To explain the legislative intent and the proposed implementation thereof, the paper approaches the discussion about proposed upload-filters from the source of the intent, through the scope and benefits thereof, to the scope and benefit of the proposed legislative requirements. 
+
+%Stefan:
+\section{Origins and OpenCourseWare} \label{mit} 
+
+Robert Brown of MIT's Council on Educational Technology had the noble idea that would eventually lead to a ``universal educational resource available for the whole of humanity \cite{open-courseware}'' in 1999, yet ``interplay among institutional leadership, [...] strategic planning, and [...] university culture \cite{OCW}'' painted a different picture for the future of Open Educational Resources at that time. \\
+
+\noindent
+The OpenCourseWare (OCW) project was the strategic precursor and was based on principles that aspired to guarantee the ``highest quality residential based undergraduate and graduate education \cite{OCW}'' through the Internet, free of charge, in the middle of the dot-com era. Many other considerations included that ability to support faculty staff by revising and producing materials as faculty time was generally split to facilitate different functionalities each unit was required to fulfill. It was to be a means to an end at first as institute-wide modernization was seen as enough to call it a success. If the university were to have gained a common repository of knowledge, interdisciplinary research was projected to increase, so that innovations on campus take place. \\
+
+\noindent
+Further, a initiative like this would undoubtedly enhance the leadership and reputation MIT sought to uphold and precipitate through ``allocation of central funding for educational technology initiatives \cite{OCW}'', all the while ``monitoring the effectiveness of ongoing programs \cite{OCW}'' and ``setting priorities for investments \cite{OCW}.'' The way there was ``to publish the materials from all MIT undergraduate and graduate subjects freely and openly on the web for permanent worldwide use.'' For MIT as a institution, it was the ``most extensive array of coordinated educated technology innovation it had embarked on in a quarter century \cite{OCW}.''
+
+\subsection{Sought After Characteristics}
+The four main characteristics the technology, produced by the team, was meant to fulfill were:
+\begin{enumerate}
+\item ability to facilitate life-long learning through a community, abbreviated by Forever-Tech;
+\item ability to continually test the new educational technology, Ed-Tech;
+\item modularity, accessibility, and easy customization, named Flex-Tech;
+\item possibility to participate in a degree-granting program for students who will never in their lifetime visit MIT, yet are ``MIT-quality students \cite{OCW}'' with the name Global-Tech. 
+\end{enumerate}
+
+\subsection{Launch in 2001} 
+On the minds of most educational institutions of the time was dot-com wealth, yet for MIT the opposite path would be the only worth considering as it made ``course materials on the Web, free to everybody \cite{OCW}.'' It is important to keep in mind the uncertainty that was present in the minds of all involved at that moment in time, this would not hold as the prospects of the project were executed marvelously giving MIT the chance to shine while the competition was going down dead-end endeavors. 
+
+\subsection{Ramp-Up 2002--2006} 
+By September 2002, praise was the main message directed their way, and by the end of the second stage of the plan, it was becoming apparent that budgetary constrains calculated 6 years earlier would be far sufficient, leaving double digit percentages for the next stage that would also perform unexpectedly well, and leave further funding to the subsequent stage. 
+
+\subsection{Challenges of the Steady State} 
+Here the unexpected positive developments would be of crucial importance, as MIT was expected to bear the full cost of the operation without much outside funding or other resources. Other challenges the project had to have an answer to were the integration of the materials produced into the regular service MIT provides as a institution primarily focused on the dissemination of knowledge. To that end, the copyright status was to be unified and checked for each unit made available, and due to the nature of the attempted cost reduction, ``presents challenges for automation \cite{OCW}.'' 
+Accomplishing a sustainable state was projected to occur once MIT's role in making high quality materials available for free became known around the globe, ways to significantly decrease the costs were found, and new funding resulted from the aforementioned developments. 
+
+\subsection{Evolution} 
+When the 2007 statistics about the usefulness of the project were collected, it had already become apparent that the reputation MIT sought to uphold worked to solidify itself through appreciation by over 600 thousand people, even though only 23 thousand were using the MIT network overall.\\
+
+\noindent
+Collaboration throughout the process of re-evaluation of the materials after time passed was a challenging component to implement, yet should be able to bring about change from the idea to the database. This made the OCW project an outwardly looking R\&D organization, and internally looking service organization. OCW became an `emblematic' movement for OER that was called into existence in 2002. 
+
+\subsection{Surpassing Initial Goals} 
+In 2005, the OCW Consortium was inaugurated, and OCW formally moved beyond MIT to over 100 universities and member organizations that published over 3000 courses. It is astonishing and of paramount importance to note that from all commercial ventures studied by McKinsey's MIT team in the year 2000 at the height of the dot-com era, only 1 survived.\\
+
+\noindent
+The project survived amidst dot-com prospects of unprecedented wealth and ``emerged from that same vision, transforming itself into something different only after a skeptical analysis of those dot-com dreams \cite{OCW}.''
+
+\subsection{The Downloaded Unit} 
+OCW is an Internet catalog of materials regarding courses taught at MIT that covers graduate and undergraduate levels and through its existence, inspired over 250 other ventures to show a road how to provide knowledge to whomever might be interested. \\
+
+\begin{quote}
+``The idea is simple: to publish all of our course materials online and make them widely available to everyone.'' -- Dick K.P. Yue \\
+\end{quote}
+
+\noindent
+The initiative functions under the Creative Commons license and allows spreading of materials otherwise protected by copyright law. The service constitutes currently around 2500 courses, divided in 11 categories from business through social studies to medicine, that subsequently are divided into subcategories, that in-turn contain detailed headings. \\
+
+\noindent
+An interesting quirk of MIT's OCW is the fact they allow for exams in these headings, which allow verification of acquired knowledge about the material. Part of the courses allow for interactive demonstrations and the downloading of complete books written by professors of universities, expanding the subject further with detailed recordings from lectures. 
+
+\section{Sustainability} 
+
+Open Educational Resources are online materials, which are globally available to everyone. The openness of the resources is characterized by online access to all types of information and fields of education with little to no limitations of their usage. When it comes to sustainability, not all resources are `cost free' because most ``entail a large scale investment \cite[p.33]{sustain}.'' In the instance of distance education, it means ``financially cheaper but also capable of promoting wider objectives \cite[p.33]{sustain}.'' \\
+\begin{quote}
+``Foundations supporting OERs, such as the Hewlett Foundation or the Wellcome Trust, incur a net loss, as funding activities are not revenue generating.'' -- Stephen Downes \\
+\end{quote}
+
+\noindent
+This illustrates an important impact to anybody that needs the opportunity for education, regardless of their financial status. OER have, therefore, the potential to close the education gap. 
+
+\subsection{Importance} \label{importance}
+Free resources are exceptionally beneficial for students who don't need to buy expensive textbooks in order to acquire the needed information for their course of study. College students can use the open access to research a field of studies or a specific course, even trying it out free of cost before signing up, eliminating the risk of wasting finances or time on something that doesn't meet their expectations. \\ 
+
+\noindent
+Not only is there an exceedingly great amount of materials from various sources, but they come in a lot of different forms, such as textbooks, videos, online tutorials and lectures, blogs and many more. Learners can profit from diverse ways to receive information or choose the best way to do so, according to their preference. Different types of learning can be sorted in 4 categories - sensing and intuitive, visual and verbal, active and reflexive, sequential and global, according to Felder and Spurlin \cite{learners}. This is why it is important for every learner to be able to use the means that are most appropriate for their learning style, so the process can be most effective. \\
+
+\noindent
+Wide availability and variety make it possible for everyone to learn or study at their convenience. Students get the opportunity to have flexible study times, without being pressured by any plans or deadlines, other than their own. Since there are no time restrictions, having constant and unlimited access enables them to learn at their own pace with regard to their capabilities. This leads to an improvement in students' performance, based on the research conducted by Feldstein et al. \cite{outcomes}. Their research was based on the transitioning of the students in some courses at the Virginia State University to using Flat World Knowledge (FWK) that has ``published open textbooks that use Creative Commons copyright licenses, which permit anyone to access and use the textbooks for free and provide significantly more flexibility for reuse \cite{fwk}.'' Iii et al. concludes that with students using Open Educational Resources there was, in fact, lower failing and withdrawing rates and better outcomes than those in the courses that did not use the materials provided by FWK \cite{fwk}. \\
+
+\noindent
+However, OER are not only for students, they can also serve a purpose for instructors and teachers. They can include the available materials in their lectures to support concepts or give further practice materials. Moreover, they are able to compare their teaching plan and materials to those of other instructors around the world. The ability of OER to be mixed, combined and reused makes them exceptionally useful and easy to incorporate. 
+
+\subsection{Challenges} 
+The main challenge of Open Educational Resources is copyright law, which is our main focus and will be further discussed in section \ref{copyright}. \\
+
+\noindent
+Another considerable challenge is quality assurance. With the extensive amounts of resources, it becomes extremely hard to keep track of their quality and relevance. As mentioned in the previous section, teachers have the opportunity to review and improve resources they come across. For efficient and consistent quality assurance, Kawachi \cite{kawachi} has presented the TIPS Framework, consisting 38 criteria for teachers and creators, split in 4 groups: Teaching and Learning Processes, Information and Material Content Presentation, Product and Format, and System Technical and Technology. The implementation of the TIPS Framework is supposed to lead to quality improvement of resources.\\ 
+
+\noindent
+The extreme amounts of resources and initiatives have also caused competition between them. As they are free of charge, they must receive funds, in order to ensure their sustainability. Although some of the most acclaimed initiatives have consistent institutional funding, that is not the case for most, and the rising competition can prevent them from receiving further support, leading to cancellation of programs. \\
+
+\noindent
+Another problem with Open Educational Resources is the language constraint. Most resources are created in languages of currently movement leading countries, such as English, Chinese or French. For the materials to be spread and made available to a bigger audience, the process of localization is of great importance. ``OER projects are cultural as much as they are educational \cite[p.14]{higher-ed}'', since ``[t]he conditions under which OER are created, the languages used and the teaching methodologies employed result in products that are grounded in and specific to the culture and educational norms of their developers \cite[p.14]{higher-ed}.'' Although the translation process itself can be very costly, since OER are open resources, there is the possibility for creators to not only translate materials, but also adapt, improve and even partially convert them, making them available and relevant to many other parts of the world.\\
+
+\noindent
+In the study conducted by Yuan et al. \cite{higher-ed}, it is shown that most faculty members that took the survey consider the following aspects of the usage of OER as their biggest barriers:
+
+\begin{enumerate}
+\item no comprehensive catalog available;
+\item difficulty finding what they need;
+\item lack of resources on their subject;
+\item ignorance of the legal aspect;
+\item low quality of materials.
+\end{enumerate}
+
+\noindent
+This suggests that there are, in fact, many other issues which the OER movement faces. This creates a vicious cycle, as these requirements can be met and the quality can be improved with the ongoing growth and adaption of the OER concept, yet its progress is being repressed because of them. 
+
+\subsection{Funding Models} 
+Numerous OER initiatives, foundations and projects have been introduced since the concept became reality in 1999, making way for an important point about how they proceed with their work -- financial support. There is no model set as a standard in the field, which is why Downes \cite{sustain} provides eight possible funding models currently in use: 
+
+\paragraph{Endowment Model.} 
+In this model, the project is provided initial funding with an appointed administrator to handle the finances and sustain the project with the received funds. As an example, at the Stanford Encyclopedia of Philosophy, the organizers argued against a subscription-based model and instead raised an operating budget of 190,000 USD from different foundations.
+
+\paragraph{Membership Model.}
+In this model, a certain amount of interested organizations are invited to ``contribute a certain sum, either as seed only or as an annual contribution or subscription \cite[p.34]{sustain}.'' For example, the Sakai Educational Partners Program's members contributed 10,000 USD and got special privileges such as ``early access to roadmap decisions, code releases and documentation \cite[p.34]{sustain}.''
+
+\paragraph{Donations Model.}
+In this model, if a project is esteemed and supported by the community, it can receive donations which are managed by a non-profit foundation. There are many open source or content projects like Wikipedia or the Apache Foundation who are funded in such a matter. There is a secondary level to donations such as the funds acquired by selling company-branded goods, like in the case of the Spread Firefox initiative.
+
+\paragraph{Conversion Model.}
+This model encouraged an organization to give free access to its customers and later `convert' them into paying customers. Sterne and Herring \cite{conversion} argue that there is a limit to how much resources you can gather with the donation model with just an open source project. For example, Ubuntu have used this model to provide their subscribers with a free-of-charge service but also advanced features to the ones who pay.
+
+\paragraph{Contributor-Pay Model.}
+As adopted by Public Libraby of Science (PLoS), this model prompts the contributors to pay for the maintenance of their contribution once and the provider makes it available for free afterwards. It is used by the Wellcome Trust who began requiring each funded material to be freely available and the costs for the process to represent around 1\% of their annual spending.
+
+\paragraph{Sponsorship Model.}
+In this model, different techniques are used to promote the projects in radio, television, commercial messages and subtle `sponsorship' messages. On the Internet, there have been often partnerships between online initiatives and educational institutions, like the MIT iCampus Outreach Initiative with Microsoft or the Stanford's iTunes project with Apple. 
+
+\paragraph{Institutional Model.}
+This model promotes the institution's own responsibility for the OER initiative, one of the most known (and the university who started the movement of OER) is MIT's OpenCourseWare project (section \ref{mit}). They have funded the project as a part of the university's regular problem, justifying the expenses with its mission to provide humanity with the powerful benefits of education.
+
+\paragraph{Governmental Model.}
+``[S]imilar to the institutional model, the governmental model represents direct funding for OER projects by government agencies, including the United Nations. Numerous projects sustained in this manner exist, for example, Canada’s SchoolNet project \cite[p.35]{sustain}.''
+
+\paragraph{Partnerships and Exchanges.}
+Even though this is not considered a financial model, institutional partnerships also play a key role in the development of OER networks. It is thought as an exchange of resources and not of funding whose output is still an open educational resource. Such partnerships exist between the Memorial University of Newfoundland and The Federal University of Ceará UFC in Brazil and ``even the International Fellowships at the Open University \cite[p.36]{sustain}.''
+
+\subsection{Other Models} 
+A few more considerations about the sustainability of OER are their development, distribution and performance, since the funding of a project is only the first step of many. In the paper of Downes \cite{sustain}, the rest of the discussed models are technical, content and staffing. 
+
+\subsubsection{Technical Models} 
+
+Part of OER's sustainability is the successful development and distribution of resources. It is expected from numerous initiatives to accomplish something with the retained funds, namely technological development. In order to share and reuse learning resources, the cost to produce them should also go down, requiring ``interoperability among data, software and services \cite[p.36]{sustain}.'' Therefore, each learning object ``must be discoverable, modular, and interoperable \cite[p.36]{sustain}.'' \\
+
+\noindent
+Two technological models have emerged from the UNESCO report in 2002 \cite{open-courseware}:  
+\begin{enumerate}
+\item free use, used locally – the OERs are used ‘as is’ without modification by the educational institution;
+\item resources are downloaded, adapted, and sent back to the system repository for vetting and potential use by others.
+\end{enumerate}
+
+\noindent
+Access and usability are another set of important considerations. The development of an OER network requires ``tools for access, including browsing, searching and data-mining [...]. Such considerations also comprise mechanisms to assist dissemination, adaptation, evaluation, and use of open courseware materials \cite[p.37]{sustain}.'' The quality of learning resources must be trusted and pristine, meaning a system to evaluate any open courseware is imperative. \\
+
+\newpage
+\noindent
+Access to OER is another point to consider, as Downes \cite{sustain} explains they are ``typically maintained through software systems called ‘repositories’ (software, meanwhile, is accessed through specialized version control systems, such as CVS or Subversion).'' Their configurations may vary, but the following is typical:
+\begin{enumerate}
+\item resources should be stored in distributed databases;
+\item they may be downloaded from there for adaptation or use;
+\item there will be one centrally maintained index of resources;
+\item the courseware is very dynamic; the index will represent a snapshot in time and will need to be regularly updated;
+\item the index will include a full history of the provenance and use of the resources as well as users' feedback and comments \cite{open-courseware}.
+\end{enumerate}
+
+\subsubsection{Content Models} 
+
+The content of a certain resource also has an impact on the sustainability. For example a book can survive decades or even centuries, whereas a course has mostly a limited lifespan, as the information can become outdated; either could contain a digitized image, but a book needs to be digitized first in order to permit it. Another type of content issue concerns the licensing of a resource, the reason why MIT's OCW project had problems with the clearing of used materials with licenses, even though they did not pay royalties or use commercial content for any of it\footnote{S. Downes, ``Massachusetts Institute of Technology,'' The Technology Source, Nov. 2002. Available: \url{http://technologysource.org/article/massachusetts_institute_of_technology/}}. This is why different licensing types exist, including Creative Commons and the GNU General Public License. \\
+
+\noindent
+It is important not to think of OER in isolation, but also respect the community that has given access to materials at everyone's disposal. As Stephenson\footnote{R. Stephenson, ``How to make open education succeed,'' Utah: Open Education Conference, 2005. Available: \url{http://cosl.usu.edu/media/presentations/opened2005/OpenEd2005-Stephenson.ppt}} suggests, ``Open Content + Community = Open Course. [...] Our thinking then has developed to encompass the importance of tutorial support from within the learning materials whether these are print, web-based, or through the use of audio/video tapes and broadcasts.'' This suggest the ``open content community is an integral part of the development of a network of OERs \cite[p.39]{sustain}.''
+
+\subsubsection{Staffing Models}
+
+For the production of high-quality resources (even if they are not exactly educational), there must be professional staff, that evaluates and completes the work, which is why it is imperative for such people to be hired. During the creation of OER, different models have emerged, but primarily OER are driven by volunteers around the globe. \\
+
+\noindent
+This partially raises a new concern regarding sustainability of initiatives, since the funding is no longer the only issue, the incentive for volunteers to work there, compared to a paycheck they can be earning elsewhere. Normally, their motivation is based on the improvement or modification that another author might provide to their work, thus bringing in more popularity to the original author. Professors, as an example, contribute to OER mostly for their future benefit, be it tenure, a promotion or simply recognition. It can be argued that without a community to share your work with, there is very little motivation for an individual to share it, since they ``would not feel a professional obligation to share, and perhaps more importantly, would not have personally experienced the value of sharing \cite[p.39]{sustain}.'' \\
+
+\noindent
+As a result, two major staffing models have been developed -- the Emergent Model and the Community Model \cite{sustain}. 
+\paragraph{Community Model.} Users are powerful and must be respected; Reputation is a natural outgrowth of human interactions.
+\paragraph{Emergent Model.} Users have no power; Reputation mechanisms are needed, such as Ebay's or Slashdot's. \\
+
+\noindent
+In the consideration of funding, technical, content and staffing models, there are actually more factors that contribute to the sustainability of an OER network, recognizing two approaches for any initiative:
+\begin{enumerate}
+\item ``On the one hand, OERs may be supported using what might be called a producer-consumer model, where the support for OERs consists in support for production and distribution to a consuming population; such an approach is more likely to be managed centrally, to involve professional staff. There is more control over quality and content, but such approaches require greater levels of funding \cite{sustain}.''
+\item ``On the other hand, OERs may be supported using what might be called a co-producer model, where the consumers of the resources take an active hand in their production. Such an approach is more likely to depend on decentralized management (if it is managed at all), may involve numerous partnerships, and may involve volunteer contributors. There is little control over quality and content, but such approaches require much less funding \cite{sustain}.''
+\end{enumerate}
+
+\section{Application in Education} \label{higher-ed}
+
+As is often the case with undertakings that disseminate knowledge, the established education sector is a primary target for application of resources of any kind. Due to the large disparity between higher education and all other when discussing OERs, the subsequent sections are divided aiming to compare their usage between the two groups. 
+
+\subsection{Primary and Secondary Education}
+OER projects are offering a great variety and amount of resources to teachers and educators that they can use to either improve their teaching or offer additional materials to their students. Aside from that, there are OER initiatives that provide teacher training, for example The Open Learning Exchange, which according to Geith and Vignare \cite{ed-gap} offers a primary and secondary curriculum to its members. Countries in Africa, where education is most needed, are suffering from a striking deficiency of teachers, with an estimated amount of 4 million vacant positions, as stated by Thakrar et al \cite{africa}. They also report that most teachers in the south (Saharan) part of Africa do not meet the lowest standards of secondary education. This results in, if available at all, low quality education. The strong urgency for improvement of the education in Africa is demanding educational materials and resources for teachers, which are being offered by OER initiatives. Such a project is namely TESSA (Teacher Education in Sub-Saharan Africa).\\
+
+\noindent
+The main goal of the TESSA initiative is to extend the access and improve the quality of primary school teacher education in Sub-Saharan Africa. Since the start of the project in 2005, 18 institutions have worked together on an OER bank with translations in Arabic, English, French, and Kiswahili \cite{africa}. By 2010, the TESSA website was already operating and offering ten different versions of OER and the initiative’s current objectives are to improve the access to the resources, to embed TESSA in selected countries institutions and to develop new partnerships\footnote{TESSA Africa. Available: \url{http://www.tessafrica.net/}}.
+
+\subsection{Higher Education} 
+The usage of digital technologies and the Internet has been a common practice in many higher education institutions, and considering the accelerated growth of OER, this gives them new teaching and learning opportunities. According to David Wiley \cite{sust-h-ed}, over 200 universities worldwide are offering more than 2500 open access courses, the majority of them in the United States, China and Japan, but there are currently OER projects developed in many other countries. \\
+
+\noindent
+Wiley \cite{sust-h-ed} has summarized three models for open educational resource projects in higher education: the MIT model, the Utah State University model, and the Rice model. The goal of the MIT OCW Project is to publish all courses of the MIT University catalog, keep updating them and publish new versions, all of which rely exclusively on paid employees in service of the project. MIT OCW are primarily used by teachers. USU OCW have the objective to publish as many of the courses in the USU course catalog as possible, which is done not only by employed staff, but also volunteers. Wiley states that the USU model might not be sustainable, but may be replicable, in contrast to the MIT model. The Rice model, on the other hand, relies only on volunteers’ contributions and services all around the world, which is not the case for the MIT and USU models. And unlike the MIT model, which has a target number of courses to publish, the USU and Rice models do not.  \\
+
+\noindent 
+Students can benefit greatly from the availability of OER in their curriculum. Some main advantages (as discussed in section \ref{importance}) are variety, flexibility and lack of cost. OER can provide students with materials and online textbooks free of charge, without having to source expensive textbooks. Furthermore, they are given the opportunity to study whenever and wherever they want to, as they are widely and freely accessible, making it easier for students to manage their time. They can also profit from the vast variety of types of resources to learn in other forms or structures, and learn and exercise additionally. A research by Concannon, Flynn and Campbell \cite{elearning} examines the perception of online resources among students and the impact of the ``recent trend in higher education is to create and provide online access to course materials \cite{elearning}.'' One reason for incorporating technology is that more and more students work part-time while attending university. Another reason is the pressure on traditional universities for progress and innovation of new technologies. Results from the research showed that none of the respondents has experienced difficulties accessing online materials, regardless of their prior knowledge about computers, and all students reported revising continuously and follow feedback from online tests. It was concluded that despite many factors that can influence students' decision to use online resources, ``of primary importance to the process were peer encouragement and perceived lecturer and tutor support \cite{elearning}.'' \\
+
+\noindent
+So a question that occurs is why professors and tutors should encourage students to use OER and why universities and institutions should engage in OER projects. Hyl\'{e}n \cite{arguments} presents 5 arguments in favor of institutional involvement in OER:
+
+\begin{enumerate}
+\item altruistic reasons -- sharing knowledge and making educational resources open to everyone;
+\item preventing duplicate work -- other institutions should not reinvent things;
+\item improvement of the resources -- with the sharing and reusing of materials, their quality improves, without additional costs;
+\item publicity -- eg. MIT has received positive recognition for their OER initiative;
+\item dealing with competition -- offering free resources is a new way to make revenue and attract students.
+\end{enumerate}
+
+\noindent
+A study conducted by Allen and Seaman \cite{ed-usa} states that the main criteria that educators use for choosing OER are, in descending order, available for free, able to be mixed, reused, combined and modified, and of high quality. In the mentioned study, it is also presented that the most used types of OER are images, followed by videos, tutorials and homework exercises. Nevertheless, only approximately 60\% of faculty considered searching OER easy, whereas approximately 75\% considered searching traditional publishers easy. However, the study concludes that 77.5\% of the faculty is expected to use or considering using OER in the future.
+
+\section{Creation, Evaluation and Licensing} 
+
+Creation of OER does not have a standardized criteria system to classify the process and is therefore a matter of either noble effort or circumstance. In this section, we will dive deeper in the family of the Wikipedia Foundation to explain their significance in the educational sector, which gave way to other initiatives to be created. Those are, for example, the Free Software Foundation with their goal to promote the freedom of everything software and how they made use of the GNU General Public License, constituting one way of licensing open works. Another non-profit organization is the Open Source Initiative, which aims to promote open software and even spread their concept to education in order to provide open source code to middle schools and university students. The last two initiatives mentioned are Open Content and Budapest Open Access Initiative due to their success in the field of OER. \\
+
+\noindent
+Evaluation is platform-specific with each having to address the problem in a unique way to varying effect. The main concern of critics is how the quality assurance of each resource is measured, and as a solution to this issue, the platform of OER Commons was introduced with a 7-step material upload check to evaluate all information. This is also the case with Wikipedia, where the quality of each scientific article is controlled (more in section \ref{wiki}). \\
+
+\noindent
+Licensing commits to give as much power to the rightholder while still retaining the materials as `open', which in the case of open educational resources is essential. Creative Commons explains the different licensing types and how they apply to each author. Should any issues arise regarding copyright infringement, section \ref{copyright} of this paper will provide deeper insight into the pending reform proposed by the European Commission. \\
+
+\noindent
+As efforts to spread education continue, the Internet also opens another point of consideration -- online courses -- provided by students, tutors and teachers' assistants around the works as part of different platforms (like Khan Academy or Saylor Academy) to provide free-of-cost materials. 
+
+\subsection{Creative Commons} \label{cc}
+
+Creative Commons (CC) is an organization that helps people legally share knowledge and creative works. They have released several free copyright licenses to create a more standard way to give permissions to share and use your own works or somebody else's\footnote{About Creative Commons. Available: \url{https://creativecommons.org/about/}}. It was founded by Lawrence Lessig, Hal Abelson, and Eric Eldred in the beginning of 2001, followed by a release of their first copyright licenses in December 2002\footnote{History of CC. Available: \url{https://creativecommons.org/about/history/}}. As of May 2018, there have been over 1.4 billion works licensed under various CC licenses\footnote{State of the Commons. Available: \url{https://stateof.creativecommons.org/}}. 
+Some of the major platforms that use Creative Commons are Wikipedia, Youtube, Vimeo, Wikimedia Commons and Deviant Art, among them is Flickr, through which more than 415 million works have been shared. \\
+
+\noindent
+One of their projects has been involvement in the Education field, where Creative Commons tries to ``minimize legal, technical, and social barriers to sharing and reuse of educational materials$^5$'', with projects starting in 2007. As the progression of the Internet has been rapid, universal access to education is now possible, but with each variation of copyright laws, it becomes increasingly hard for OER to flourish. The Open Education program at CC aims to minimize these obstacles in order to maximize ``the benefits of open educational resources (OER) and the return on investment in publicly funded education resources\footnote{Education/OER. Available:  \url{https://creativecommons.org/about/program-areas/education-oer/}}.'' Their project envelops all levels of education and sectors of industry, such as non-profit, corporate and government. \\
+
+\noindent
+Education resource uploading entities, which have published works as OER licensed under CC, are for example OER Commons, Encyclopedia of Life, Public Library of Science (PLOS), MIT OpenCourseWare (OCW), Open Yale Courses (OYC) and the Khan Academy.
+
+\subsubsection{Three `Layers' of Licenses} 
+CC's public copyright licenses use a `three-layer' design\footnote{Licensing Considerations. Available: \url{https://creativecommons.org/share-your-work/licensing-considerations/}}. Each license begins with the traditional legal language and text format they know, calling this layer the `Legal Code' of each license.\\
+
+\noindent
+Since most content creators are not actually lawyers, CC makes the licenses available in a format that normal individuals can read, calling the second layer the Commons Deed, or `Human Readable'. The Commons Deed serves as a reference for licensor's and licensees, which summarizes the most important terms and conditions.\\
+
+\noindent
+The third layer recognizes that software is the most important part of the creation, copying and distribution of works. CC provides a `Machine Readable' version of the license, which summarizes the freedoms and obligations into a format that software systems, search engines and other technology can understand. Creative Commons developed a standard to describe software-readable licenses and called it ``CC Rights Expression Language (CC REL)''.\\
+
+\noindent
+All together, these layers of licenses ensure that the span of rights is not just a legal concept. They are meant to assure the understanding of the works for the creators, users and the Web.
+
+\subsubsection{Licensing Types} %REVIEW NEEDED ===Stefan=== === === ===reviewed===
+There are six main licenses an individual can choose from when they are publishing their work with a Creative Commons license, listed below from most `accommodating' to most `restrictive'. 
+
+\paragraph{Attribution (BY).}
+``All CC licenses require that others who use your work in any way must give you credit the way you request, but not in a way that suggests you endorse them or their use. If they want to use your work without giving you credit or for endorsement purposes, they must get your permission first\footnote{Licensing Types of CC. Available: \url{https://creativecommons.org/share-your-work/licensing-types-examples/}}.''
+
+\paragraph{ShareAlike (SA).}
+``You let others copy, distribute, display, perform, and modify your work, as long as they distribute any modified work on the same terms. If they want to distribute modified works under other terms, they must get your permission first$^9$.''
+
+\paragraph{NonCommercial (NC).}
+``You let others copy, distribute, display, perform, and (unless you have chosen NoDerivatives) modify and use your work for any purpose other than commercially unless they get your permission first$^9$.''
+
+\paragraph{NoDerivatives (ND).}
+``You let others copy, distribute, display and perform only original copies of your work. If they want to modify your work, they must get your permission first$^9$.'' It is important to note that works licensed under ND are not considered a part of OER.
+
+\subsubsection{Free and Non-Free Licenses}
+CC provides a wide range of licenses, each of which provides the user with different rights towards the licensed materials. The licenses falling into the spectrum of Free Cultural Work are marked by CC as ``Approved for Free Cultural Works'' to be distinguished clearly from the others. This includes BY and BY-SA, as well as CC0 (`No Rights Reserved'). Other licenses like BY-NC, BY-ND, BY-NC-SA or BY-NC-ND allow for limited usage of a particular work under these licenses, which excludes them from the span of Free Cultural Work\footnote{Free Cultural Works. Available: \url{https://creativecommons.org/share-your-work/public-domain/freeworks/}}.\\
+
+\noindent
+The term `Free Cultural Work' includes in itself four characteristics$^{10}$:
+\begin{enumerate}
+\item a user has the freedom to use the work;
+\item a user has the freedom to use the information in the work for any purpose;
+\item a user has the freedom to share copies of the work for any purpose;
+\item a user has the freedom to make and share remixes or other derivatives for any purpose. \\
+\end{enumerate}
+
+\noindent
+CC makes another important distinction: Public Domain Mark (`No Known Copyright'). This mark is used on works that are no longer restricted by copyright, making them easily discoverable. It can be used as an important piece of information that allows other individuals to verify the copyright status of a work. This license is applicable where cultural heritage is involved -- paintings, books or manuscripts -- many of which are old and no longer protected under copyright\footnote{Public Domain Mark. Available: \url{https://creativecommons.org/share-your-work/public-domain/pdm}}.\\
+
+\noindent
+All of these freedoms and licenses provided by Creative Commons are still considered more `free' than the established `All Rights Reserved'.
+
+%creative commons and free open-source software are two licensing types and these sections need to be next to each other, please keep them together
+\subsection{Free Software Foundation}
+
+Another license is the GNU General Public License from the free and open-source software (FOSS) community. The Free Software Foundation was founded in 1985 by Richard Stallman as a non-profit organization which promotes the rights of computer users, the knowledge about copying and modifying, and spreading computer programs. The institution also promotes a freedom approach towards everything software and upholds the philosophy that software should be free of charge and available alongside documentation and source-code. 
+Stallman himself stands in opposition to property rights of software and states that maneuvering through the labyrinth of patents will be harder than writing code, and additionally points out that the US-constitution protects the rights of creators to further the development of sciences. When legal proceedings inhibit progress of the higher arts, science has to smite them from its path, he states. Aside from that, the foundation supports freedom of speech, publication and the right to privacy on the Internet.\\
+
+\noindent
+The most well known project of the organization is the GNU-project, which aims to create a complete, free, Unix-like operating system. Work on the project began even before the founding in 1984 after Stallman left MIT. This, as he states, was necessary to guarantee that the university would not claim ownership.\\ 
+
+\noindent
+The first product created and made freely accessible under the GNU General Public License (GPL) was the text-editor GNU EMACS. GNU GPL is a license of the copy-left type created by Richard Stallman and called the virus license. The name stuck due to one clause stating that any program making use of an element published under this license must be published under the same license. GNU EMACS spread through 2 distribution channels - MIT's anonymous FTP server and portable storage mediums for the price of 150 dollars. Sales of the software were the primary source of financing the project, but today is it substantially financed with private gestures of charity from companies and foundations. From the 90's onwards, GNU has become a fully fledged operating system without a kernel which is the Linux Kernel. The whole system is called GNU/Linux today. \\
+
+\noindent
+Current activities undertaken by the organization, besides development of software that is a part of the GNU project, are:
+
+\begin{enumerate}
+\item GNU licenses, where aside from GNU GPL, each newly created license serves a different purpose. The GNU Lesser General Public License, for instance, is a less restrictive version that does not force the creators to publish software containing elements of GNU LGPL under the same license;
+\item GNU press -- focuses on free books on IT topics;
+\item H-node -- a repository of drivers for devices and hardware, compliant with the rules of free software;
+\item the free software directory -- serves as a catalog of free software with every information about its topic, such as: creator(s), programming language it is written in, a website of the project, etc. The catalog is meant to allow easy searching through free software;
+\item project hosting -- a service dedicated to hosting developing projects;
+\item advocacy -- organizing campaigns against undertakings, deemed by the FSF to be a spar against free software.
+\end{enumerate}
+
+\subsection{Wikimedia Foundation} \label{wiki}
+The Wikimedia Foundation is a non-profit organization founded in 2003 by Jimmy Wales\footnote{Wikimedia Foundation. Available: \url{https://en.wikipedia.org/wiki/Wikimedia_Foundation}}. It is part of the Wikimedia movement that is characterized by the community of people, engaged in activities, with the goal of allowing everybody with Internet access to have as many information goods they can copy and edit at their disposal as possible.\\ 
+
+\noindent
+The founding took place as a part of a bigger effort that would eventually allow for the functioning of Wikibooks, Wikiversity, Wikimedia Commons and other derivative projects based on the model of free content and rules of non-profits. The foundation currently employs over 280 people$^{12}$ that coordinate development, but the main part of project development is done by volunteers all around the globe. Despite the fact that the Wikimedia Foundation did not begin the movement of OER, its many contributions undoubtedly are the most recognizable services sharing free knowledge.
+\subsubsection{MediaWiki}
+A common base used for all Wikimedia Foundation projects is MediaWiki, which was originally designed as Wikipedia's software. Nowadays, it serves as a content management system for other foundation's well known knowledge portals such as Wikipedia, Wikimedia Commons, Wikiversity or Wikidata. It is also commonly used for creating hobbyist wikisites, project documentations as well as e-learning. \\ 
+
+\noindent
+The whole architecture of MediaWiki is oriented around the goal to be a scalable, extensible, multi-language, open content providing platform\footnote{MediaWiki Manual. Available: \url{https://www.mediawiki.org/wiki/Manual:MediaWiki_architecture}}. These core features constitute an attempt to address some challenges OER face: accessibility, discoverability as well as quality assurance and control.\\
+
+\noindent
+Being available in 291 languages\footnote{Wikipedia's language versions. Available: \url{https://en.wikipedia.org/wiki/List_of_Wikipedias#Language_editions}} makes Wikipedia the most accessible source of knowledge on earth. This is enabled by native support of multiple languages in the MediaWiki software through localization and an internationalization component. The aim is ``not only to provide the content in the readers native language, but also to provide a localized interface, and effective input and conversion tools, so that participants can contribute content$^{13}$.'' It is ensured that the whole content of MediaWiki-based websites is fully accessible by both humans and machines/programs/other websites.\\
+
+\noindent
+Scalability is another major design goal of MediaWiki, since Wikipedia, the biggest wikisite using the software, is among the top ten websites on the Internet by number of unique visitors. Multi-level distributed caching using Squid open proxy software aims to minimize the average amount of calls to the server during interaction with the website. A load balancer with database replication enables scaling together with the user base, without overloading the server.\\
+
+\noindent
+While aforementioned solutions ensure scalability with growing usage, MediaWiki was also created as a tool that scales with increasing functionality. There are currently over 2000 extensions available, which expand the possibilities of the base software. They allow to enhance visual aspects, modify and improve the search engine as well as implement different models for data structuring\footnote{Extensions of MediaWiki. Available: \url{https://www.mediawiki.org/wiki/Extension_Matrix}}.\\
+
+\noindent 
+Since MediaWiki was created for Wikipedia, it has to address challenges related to an open development model, therefore the software provides extensive access management functionality. Through creation of user groups with a different rights scope and modification of permissions for almost every possible action, a very granular level of access control can be achieved. Furthermore, the control version system makes it possible to see and compare every modification of the content including the author as well as rollback to a previous version, for example in cases of vandalism. Finally, Talk pages\footnote{Talk Pages. Available: \url{https://www.mediawiki.org/wiki/Manual:MediaWiki_feature_list#Discussions}} provide means of communication between contributors, where they dispute and give feedback to the content created. 
+
+\subsubsection{Wikimedia Commons} 
+Another initiative used by other Wikis is named Wikimedia Commons. It is a warehouse of multimedia created in 2004 to eliminate the need for duplication of data for different projects of the foundation and its language versions. The repository currently contains almost 48 000 000 free-licensed multimedia that are categorized and available in almost 300 languages\footnote{Basic Facts about Wikimedia Commons. Available: \url{https://commons.wikimedia.org/wiki/Commons:Welcome}}.
+
+\subsubsection{Wikipedia}
+The most famous product from the family, Wikipedia, is available in around 300 languages and contains 40 000 000 articles. It was created in 2001 and is the oldest project of the Wikimedia Foundation, even being older than its supposed parent.\\
+
+\noindent
+The website of Wikipedia is one of the most often visited sites on the Internet with around eighteen billion visits of the site and five hundred million unique visitors each month\footnote{Statistics of Wikipedia. Available: \url{https://stats.wikimedia.org/v2/#/en.wikipedia.org}}. The service, like many others from the Wiki family, would not be possible without the involvement of voluntary participants from around the world, and the fact it is so is one of the most commonly used arguments among people criticizing the undertaking. Due to the model, under which the majority of the service works, ie. anybody can gain access and edit the content, it is accused of containing many flaws and half-truths, which results in the inability to use it interchangeably with a traditional encyclopedia. Wikipedia also falls victim to vandalism, consisting of willful dissemination of falsehoods or outright purging of content. \\ 
+
+\noindent
+In 2005, however, the magazine Nature conducted an experiment in which 42 scientific articles from the Encyclopedia Britannica and Wikipedia were compared. It was noted that the quality of the information from the free encyclopedia does not differ from the British encyclopedia\footnote{Nature: Internet encyclopaedias go head to head. Available: \url{https://www.nature.com/articles/438900a}}.
+
+\subsubsection{Wikiversity}
+Wikiversity is one of the less known Wkimiedia Foundation projects which was created in 2006 that is also based on the MediaWiki software. Its three main objectives are: 
+\begin{enumerate}
+	\item to develop and host educational materials (such as videos, guides, essays, interactive quizzes, lesson plans, etc.);
+    \item to provide a space in which to develop learning activities and communities;
+    \item to facilitate research projects and host research results \cite{mw-wikiversity}.
+\end{enumerate}
+The promoted way of using the service and contributing to it is described as ``experimental learning''\footnote{Wikiversity: Learning. Available: \url{https://en.wikiversity.org/wiki/Wikiversity:Learning}} and focuses on active participation of everyone involved in a subject. This collaborative process takes place similarly to Wikipedia through editing of the content page and posting on Talk Pages. What makes Wikiversity different from Wikipedia, is its more dynamic nature as well as a more direct and active communication between learners or researchers involved\footnote{What Wikiversity is not. Available: \url{https://en.wikiversity.org/wiki/Wikiversity:What_Wikiversity_is_not}}.
+
+\subsection{Open Source Initiative} 
+
+The Open Source Initiative (OSI) is a non-profit organization founded in 1998 by Bruse Perensa and Eric S. Raymond whose goal is the promotion of open software\footnote{Open Source Initiative. Available: \url{https://opensource.org/history}}. The undertaking began in 1997 when Eric Raymond published a work titled ``The Cathedral and the Bazaar'', an essay about the methods of open source creation using the Linux kernel creation process as an example. The text contrasts the two following approaches during the creation of the software with open source code. \\
+
+\noindent
+The first is the Cathedral approach, in which code is published with the software, but created by a select few programmers. As an example, the assortment of compilers released under the GNU -- GNU Compiler Collection (gcc) project can be listed. \\
+
+\noindent
+The second model is that of the Bazaar, consisting of cooperation between volunteers through the Internet in such a way that every observer can, in real-time, follow the process of the creation of the software while it is possible to turn on and off the group of developers. The Bazaar model was used by Linus Torvalds during his work on the Linux Kernel and to him Raymond attributes the creation of this approach$^{22}$. \\ 
+
+\noindent
+The organization has created criteria specifying the open-source approach, wanting to emphasize that they would like to carry less immediate political and ideological connotations. The second reason behind this creation was marketing - the members of the Initiative were convinced that labeling Open Source displayed a model more open to companies than Free Software$^{22}$. \\
+
+\noindent
+The effect of using a different specification was fracturing among the Open Software Initiative and by Richard Stallman, the Free Software Foundation developed into the GNU project. The Open Source definition was based on guidelines of Debian on Open Software (Debian Free Software Guidelines, DFSG). 
+
+\subsubsection{OSI and Education}
+OSI is committed to spreading the concept of Open Software through education of creators of software and users on the topics of advantages and disadvantages resulting from releasing the source code of software. The organization holds various presentations on the technology of open source as well as focuses on creating a community of people upholding their philosophy through active participation in conferences and workshops in the entire world. The OSI reserves special care for the promotion among younger people. To this end it focuses on teachings about software with open source code in the educational context of middle schools and university students. The organization offers Internet seminars, educational conferences and other kinds of courses. 
+
+\subsubsection{Successes and Acknowledgements}
+The creation of the term Open Source, that today is known by a wide range of people from outside the programmers field, can be attributed to the Initiative. The organization also provides internal documents of the giant from Redmond - Microsoft, the so called Halloween documents, indicating the distaste for GNU and Linux containing suggestive methods to fight the threat coming from software, from an open source\footnote{Halloween Documents. Available: \url{http://www.catb.org/~esr/halloween/}}.
+
+\subsection{OER Commons} 
+OER Commons is a web platform that acts as a hub for creating, sharing and evaluating OER. It was created by the Institute for the Study of Knowledge Management in Education, and launched in 2007. The main purpose of the platform is to serve experts and teachers, allowing them easy creation, sharing of resources as well as rating and feedback in order to improve the quality of materials for all educational levels. The catalog currently contains over 60 000 courses divided into 12 topics, 3 stages of education, and 22 types of material.\\ 
+
+\noindent
+The service focuses on leveraging the underlying activities of OER: creating, sharing, remixing and evaluating. The website provides a clear, transparent yet very functional interface. The user is familiarized directly with possibilities to get accustom with the concept of OER and OER Commons, discovers resources or creates new ones. The resources themselves can take the form of a single entity called just `Resource', a lesson or a module. For all three types ready-to-use online tools embedded in the website exist, that allow for text formatting and adding different media such as image, audio or video. Another option called `submit a resource' allows for embedding any external website, which serves educational purposes and is published under an open license, in OER Commons. This variety of possibilities ensures flexibility for content creators enabling them also to share already existing content.\\
+
+\noindent
+Discoverability in OER Commons is achieved through strongly developed meta content of each resource. On the creator side a complex description form is provided, which includes, but is not limited to, fields such as education type, subject, language and material type. On the resource consumer side effective search for materials filtered by all informations describing the resource is implemented. Moreover each registered user has access to his own cloud space for storage of discovered content as well as its remixes and self created materials. Further facilitations exist in the form of browser plug-ins and a WordPress extension that makes the service even more available and convenient. \\ 
+ 
+\noindent
+The platform emphasizes strongly on the aspect of quality. Users themselves are responsible for the evaluation of resources. For this purpose a feedback tool, made in cooperation with the Achieve organization, is provided\footnote{Achieve. Available:  \url{https://iskme.zendesk.com/hc/articles/115001578263-Use-the-Achieve-Rubrics}}. It allows for multidimensional evaluation of many aspects of a resource in respect to different education standards. All averaged ratings are visible as part of the resource overview. Additional features such as user groups, hubs and discussions give further possibilities for communication which can also have an enhancing effect on the content quality. 
+
+\subsection{Open Content}
+Open Content is a concept describing any kind of creative work, that is published and licensed in a way that allows the recipient of the license a wide range of freedoms regarding the usage of it. `Openness' remains a rather deceiving term, for its meaning is not the lack of restrictions regarding the usage of the content. The authors resign only a part of their rights, still reserving the claim to a name of the original author. \\ 
+
+\noindent
+The history of the concept begins in the year 1994 with Michael Stutz who wrote an article titled ``Applying Copyleft to Non-Software Information.'' Using the confusing term, `Open' has its roots in the work of Richard Stallman. The term `Open Content' is an analogy to the philosophy propagated by him towards open source. \\ 
+
+\noindent
+Open Content gives the author the ability to effectively, and lawfully transfer a wide range of legal rights for one's own use, all-the-while minimizing negative attributes like criminal status for both the creator and recipient. \\ 
+
+\noindent
+In the year 2003, the Creative Commons project replaced the long accomplished Open Content, and in 2006, work began on many projects such as a common definition of Open Content, the effect of which is the Definition of Free Cultural Works from 2007 that is used by projects of the Wikimedia Foundation. In 2008, licenses of the Creative Commons type were marked as compatible with Free Cultural Works and in 2009, Wikipedia migrated to the Creative Commons Attribution-ShareAlike principles that they to this day use for licensing of their content. Since 2009 there has been no change to the content or definition of the CC-family, this is about to change. 
+
+\subsection{Budapest Open Access Initiative}
+
+The Budapest Open Access Initiative (BOAI) is a public campaign regarding open access to scientific literature that was published in 2002. The idea was born during a chamber meeting regarding open access in Budapest, organized by the Open Society Foundation, where a group of participants asked the question how to ``work together to achieve broader, deeper, and faster success$^1$.'' The goal of the meeting was the acceleration of progress in the field of publishing possibilities and searching for scientific literature in any field of study freely on the Internet. \\
+
+\begin{quote}
+``An old tradition and a new technology have converged to make possible an unprecedented public good.'' - Budapest Open Access Initiative\footnote{Open Access. Available: \url{http://www.soros.org/openaccess/read.shtml}} \\
+\end{quote} 
+
+\noindent
+BOAI was the first to define the term Open Access (OA), and the definition they created became regularly quoted in the context of practices and law regarding open access. During the 10 year anniversary of the project in 2012, the goal of the initiative was initiated stating that ``within the next ten years, OA will become the default method for distributing new peer-reviewed research in every field and country\footnote{BOAI 10th Anniversary. Available: \url{http://www.budapestopenaccessinitiative.org/boai-10-recommendations}}.''
+
+\subsection{Open Online Courses}
+
+Massive Open Online Course (MOOC) are free online courses available to anybody who wants to enroll in them, representing big platforms that aim to supply anybody with educational resources in on-demand fields. Many MOOCs provide interactive courses with community interactions between students, professors and teaching assistants, including quizzes, assignments etc. Such providers include EdX, Coursera, Khan Academy, Open2Study etc. Benefits of such platforms include improved access to higher education, providing an affordable alternative to formal education, flexible learning schedules and online collaboration.  
+
+\subsubsection{Khan Academy}
+
+Khan Academy is a non-for-profit organization created in 2006 by Salman Khan whose goal was to provide students with a set of online tools to help their education. All of their resources are short-length videos on Youtube available to their users. Their website is in English and has 5 official translations, including content in 24 other languages in the form of closed-caption subtitles on the videos. The organization is funded mainly from donations and other project contributions, both Google and AT\&T have donated millions to them for the purposes of translating their videos or handling their content through mobile phone apps. \\
+
+\noindent
+Their website does not only feature different courses with the Youtube videos, but also offers progress tracking, practice exercises and teaching tools. Videos range across all subjects which are covered in kindergarten, schools and high-school (K-12), as well as online courses for preparation for standardized tests for college in the USA, such as SAT and MCAT. Around 2014, KA introduced a new section for `coaching', which includes ``materials to guide teachers, tutors, parents, and others in how to use Khan Academy to meet their students’ learning goals \cite[p.3]{khan-ac}.'' This enables parents to teach their children new things or expand knowledge attained as a school by using it at home, as well as allowing teachers to monitor their students' progress by assignments they send over the platform. To ensure the quality of the courses, KA has over 200 hires or volunteers\footnote{Content Specialists. Available: \url{https://www.khanacademy.org/about/our-content-specialists}} who are content specialists and vet any material posted on the platform, some of which have been edited to exclude found errors. \\
+
+\noindent
+In 2011, the Bill and Melissa Gates Foundation funded a study for the development of Khan Academy's use in K-12 schools \cite{khan-ac}. They studied both 2011-2012 school years and 2012-2013 school years, with the participation of around 20 schools, 70 teachers and over 2000 students. Over the course of the study, each participator revised their usage of the tools and resources, so a ``rigorous evaluation'' of KA's impact was unreliable. However, the results from the students were astonishing in the end -- over 70\% perceived KA positively, admitting to like math more because of the online tutorials, the students' engagement in those learning sessions was higher and was considered enjoyable, noting `Khan time' as their focus time. Regarding the teachers' use and perception, 86\% wanted to recommend the platform to other teachers and 89\% were planning to continue using it for the next school year. In their capacity to support students, eight out of ten teachers reported an increase in ability to track the progress of the students, making them aware of who is falling behind and who is ahead of the class, allowing them to help some catch up or expose others to advanced concepts ahead of the class level. ``Overall, the study identified many positive findings relevant to educators, developers, and education leaders, and shows that the schools serving diverse student populations can make use of Khan Academy as a component in their mathematics instruction \cite[p.15]{khan-ac}.''
+
+
+\subsubsection{Saylor Academy}
+
+The Saylor Academy was established in 1999 by Michael J. Saylor, becoming one of the largest online catalogs for college-level courses after shifting their focus to the Free Educational Initiative in 2008. As of today, they offer ``nearly 100 full-length courses at the college and professional levels\footnote{About the Saylor Foundation. Available: \url{https://www.saylor.org/about/}}.'' \\
+
+\noindent
+Their online catalog spans over the biggest majors in the US, such as Computer Science, Physics, Mathematics, Business Administration and many more\footnote{Saylor Courses. Available: \url{https://learn.saylor.org/course/index.php?categoryid=2}}. They self-advertise not as a MOOC but instead promote their learning materials as created by expert educators, enabling users to learn with the pace of a normal classroom and setting their own deadlines for finishing any course they want. One of the reasons to choose their platform is the certificate that you receive after a successful completion of the course, boosting the degree-qualifying system in their favor, since any Saylor certificate is recognized by employers. \\
+
+\noindent
+To ensure each material's quality is pristine, the organization hires credentialed professors to create the basic structure of each course, as well as to vet and organize OER materials into a structured and intuitive matter. They also task at least two professors and a graduate student with reviewing each course after it has been assembled, which constitutes an assessment design stating if the contained information is accurate and compatible. \\
+
+\noindent
+All materials in their website are ``resources that users may retain, reuse, revise, remix, and redistribute\footnote{Licensing Information of Saylor Academy. Available: \url{https://www.saylor.org/open/licensinginformation/}}'' under their clear licensing terms on each course page. With a few noted exceptions, each resource is labeled under the Creative Commons Attribution (CC-BY) license. Their materials are only meant to be reproduced or distributed for academic purposes, since the intended audience is the classroom. One of the key differences with other platforms is their funding of new or extra materials when needed for a course, meaning they stimulate the development of original content if they aren't granted permission by a rightholder to use a material for one of their courses. 
+
+\newpage
+\section{No-Upload-Filter} \label{copyright}  %REVIEW NEEDED ===Stefan===Krisy=== === ===reviewed===
+
+In September 2016, a new proposal from the European Union was introduced,  called `Proposal for a Directive of the European Parliament and of the Council on copyright in the Digital Single Market', which contributed directly to some major copyright reforms, including the largely discussed `Upload Filter'. The European Commission propose the implementation of upload filters that pre-screen everything people publish on the Internet, especially on social media or any other content-filled platforms and softwares, which would disrupt society's online participation, communication and news exchange. \\
+
+\noindent
+One of the main reasons this has created EU-wide movements and protests is due to the coalition agreement of the German parties CDU/CSU and SPD, who made a promise to discard the methods proposed in article 13 from the proposal, saying it is `categorically not an option in any measure, shape, or form', all activists against it are trying to remind the government about its commitment and mission, stated in the agreement after Germany announced in Brussels that it is in favor of the proposal. Some of them incentivize their supporters to use \#NoUploadFilter, to contact their local authorities and provide any help towards the dismissal of this article. An argument against is that such filters regularly make mistakes, causing legal, protected speech and fundamental rights to be suppressed. Overblocking is also a concern from the legal perspective, since it is much safer to leave out potentially dangerous data than to leave it in. \\
+
+\noindent
+This has also spawned a political movement by a Dutch digital rights foundation ``Bits of Freedom'' called `SaveTheMeme'. They advocate against the Upload Filter, which would severely affect the community of content creators on Reddit, 4chan and 9gag, who sometimes depend on copyrighted work to create new memes or gifs, while addressing trending topics. \\
+
+\noindent
+The filters are supposed to protect against copyright infringements and bring monetary benefits to the original authors or creators, but many believe that a massive change like this would benefit mostly big players like Facebook and would halt the development of startups and small businesses that cannot implement this change and have to do everything manually. \\
+
+\noindent
+The current actions that are being undertaken are following a different agenda that would like to leave upload filters on the table as a possible option while providing exemptions in the case of Wikipedia, and possibly others. The law is supposed to count out Wikipedia and other non-commercial online encyclopedias. It is meant well, but it is not enough to add them as an exception if the rest of the Internet will have a filter before any content is uploaded, making the exception for Wikipedia insufficient due to how they want to protect freedom of speech and knowledge. The Wikipedia team, for instance, is dependent on Wikimedia Commons, a media archive platform that will not receive the same exemption from upload filters. The platform can be viewed as both a non-profit and a commercial competitor, which makes the case for upload filters to be applied. \\
+
+\noindent
+An alternative to the upload filter approach is the API-obligation that allows property right holders to search the platform for their content and allows them to mark misuse of it as such, leading to the filtering and removal of unlawful materials from the platforms without the need for a upload filter. \\
+
+\noindent
+The basic assumption of some experts in the field is that upload filters will inevitably cripple open educational resources as a whole.
+
+\subsection{Debate}
+
+One of the advocates for the removal of different articles is Julia Reda, a German politician and Member of the European Parliament, who has declared the copyright reform to be the focus of her legislative term. She is fighting to preserve the freedom of the Internet by focusing on three important points: 1) extra copyright for news sites; 2) censorship machines; 3) text and data mining. 
+
+\paragraph{Text and data mining.} 
+Article 3 establishes an exception for text reproduction and extraction only to institutes, universities or other organizations ``for the purposes of scientific research \cite{Copyright Reform}.'' In other words, it prohibits anything other than a research organization to use text and data mining to gain a competitive advantage. In her opinion\footnote{Text and data mining. Available: \url{https://juliareda.eu/eu-copyright-reform/text-and-data-mining/}}, this article will have the following consequences:
+\begin{enumerate}
+\item it will have a negative effect on innovation since analyzing big data sets and AI-based systems need data mining; this would also not enable research organizations to publicize their breakthroughs;
+\item it can harm EU competitiveness in promising sectors like research and AI due to the exception scope of a text and data mining copyright, especially important to EU startups.
+\end{enumerate}
+
+\paragraph{Extra copyright for news sites.}
+Article 11 of the proposed EU copyright reform/expansion would require anybody who uses a snippet of journalistic content to first get a license from the publisher which would apply for 20 years after the publication. For example, any shared article or story on social media would need a license, including any analyzing, monitoring or fact-checking services. The targeted platforms are Google, Facebook, Twitter and Pinterest. Her arguments\footnote{Extra copyright for news sites. Available: \url{https://juliareda.eu/eu-copyright-reform/extra-copyright-for-news-sites/}} against this article are namely:
+
+\begin{enumerate}
+\item the likelihood of the reform failing due to several similar laws in Germany and Spain that had negative impact on society;
+\item limitation of hyperlink clicking because the reader wouldn't know what the link leads to;
+\item restriction to businesses and individuals who cannot sum up their articles in snippets or actual headlines;
+\item can boost `fake news' media outlets' visibility who are unlikely to charge for snippets and discourage the sharing of reputable news content;
+\item can halt the emergence of news-related startups which are essential to finding new business models and advancing news sharing as technology continues to develop;
+\item potential disadvantages for small publishers with less recognition;
+\item conflicts with the Berne Convention which guarantees the right to quote news articles.
+\end{enumerate}
+
+\paragraph{Censorship machines.} 
+
+Article 13 states that any platform that hosts user-uploaded content has to filter their contributions in order to spot any copyright infringement. For example, when an artist uploads their music on Spotify and asks the company to keep an eye on their work, they should monitor any future uploads in websites like SoundCloud where users can add the song there without the permission of the artist, causing their rights to be misused. The reason for this proposal is that platforms like Youtube do not gain enough revenue from search engines like Google for running their ads online. Her arguments\footnote{Censorship machines. Available: \url{https://juliareda.eu/eu-copyright-reform/censorship-machines/}} against this article are the following:
+\begin{enumerate}
+\item upload filters often cannot distinguish between infringement and legal uses (eg. parody) which may result in legal content being taken down;
+\item can cause problems for content creators whose works may be removed by filters which are legal but get labeled as `guilty until proven innocent';
+\item puts EU users and their online behavior at risk due to the high development costs of such technology which could get outsourced to large US providers;
+\item can disincentivize investment in content startups  due to the implementation of such filters and will prevent EU competition to the benefit of the already dominant US platforms;
+\item harmful for other sectors like Wikipedia which relies on user uploads, as well as software platforms (undermining of FOSS) or scientific institutions (undermining of Open Access).
+\end{enumerate}
+
+\noindent
+Due to each reason and argument, Julia Reda is advocating against these articles to preserve the freedom of speech and a few fundamental rights of each EU citizen, as well as `saving' important concepts that drive the creation of startups.
+
+\subsection{Affordable Telecommunication Services} 
+
+The basic requirement OER need to be able to take advantage of is universal access to information goods, enforcement and legal action against providers of telecommunication services that neglect to provide fair access is a stride the EU wants to see improved through end-consumer-contract-requirements that ``provide information on the minimum quality standards of service as well as on compensation and refunds if these levels are not achieved \cite{ATC}.'' \\
+
+\noindent
+To manage an entire continent ``a consistent single market approach to spectrum policy and management \cite{ATC}'' is required, this includes tackling regulatory fragmentation to consolidate on economies of scale, ``ensuring a level playing field for market players and consistent application of the rules \cite{ATC}'', high speed broadband investment, and ``a more effective regulatory institutional framework \cite{ATC}.'' \\
+
+\noindent
+This development has roots stretching back to attempts at guaranteeing universal access of emergency services that took shape in the number 112 that any EU-citizen can use. Similarly developing advancements are taking hold of copyright enforcement, and will be explained in the subsequent sections.
+
+\subsection{Political Guidelines for the European Commission}
+
+Jean-Claude Juncker, the Luxembourgish politician serving as President of the European Commission since 2014, stated in his Political Guidelines for the next European Commission on July 15th 2014 in Strasbourg: ``My agenda will focus on ten policy areas \cite{JCJ}.'' Those concern Jobs, Growth, Investment, a connected Digital Single Market, a Resilient Energy Union, Climate Change Policy, a fair Internal Market, Economic, and Monetary Union, a Balanced free Trade Agreement with the U.S., a New Migration Policy, a Union of Democratic Change, and making the EU a Stronger Global Actor. \\
+
+\noindent
+The underlining ethical considerations that are in his opening statement are commendable for many reasons. His proposal to add a social impact assessment to monetary considerations when shaping reforms shows a widened inclusive perspective onto Europe as a whole, adding that ``social effects of structural reforms need to be discussed in public \cite{JCJ}.'' It is important to put this statement alongside the following: ``[T]he safety of the food we eat and the protection of Europeans' personal data will be non-negotiable for me as Commission President \cite{JCJ}'', to demonstrate how these words turn into regulations like the General Data Protection Regulation (GDPR). \\
+
+\noindent
+When it comes to how this process should proceed, he stated that ``[O]ur citizens have the right to know with whom Commissioners and Commission staff, Members of the European Parliament or representatives of the Council meet in the context of the legislative process. I will therefore propose an Inter-institutional Agreement to Parliament and Council to create a mandatory lobby register covering all three institutions. The Commission will lead by example in this process \cite{JCJ}.'' This is a bold statement, just as the following: ``The Commission should be in a position to give the majority view of democratically elected governments at least the same weight as scientific advice, notably when it comes to the safety of the food we eat and the environment in which we live \cite{JCJ}.'' \\
+
+\noindent
+On the basis of these principles, policy area number 2 and its copyright reform \cite{JCJ} will be of paramount importance for Open Educational Resources.
+
+\subsection{Digital Single Market} %REVIEW NEEDED === === === === ===reviewed===
+
+``Europe needs a broad-based agenda for reform. [...] We  must  break  down  national  silos  in telecommunication  regulations,  in  copyright  and  in  data  protection  standards \cite{JCJ}.'' The incentive represented here is ``EUR 250 billion of additional growth in Europe \cite{DSM}'', the road there are ``ambitious legislative steps towards a connected digital single market'' and the spectrum of reform will be a ``horizontal policy, covering all sectors of the economy and of the public sector \cite{DSM}.'' 
+
+\subsubsection{The need for a Digital Single Market} 
+
+Many issues the continent is facing are best tackled on the European level, leading the digital economy by example is one of those that needs to be resolved in a way superior to the system currently in place where fragmentation barriers pose a considerable challenge and ``are holding the EU back \cite{DSM}.'' \\
+
+\noindent
+Interplay among the regulations implementing the Digital Single Market (DSM) will take place and remove ``barriers to cross-border online activity \cite{DSM}'', provide a ``level playing field \cite{DSM}'' for networks and services, and most thematically, ``boost  industrial  competitiveness  as  well  as  better  public services, inclusiveness and skills \cite{DSM}.'' \\
+
+\noindent
+The DSM aims to be a paradigm shift for all companies that are in any way hindered by the regulatory fragmentation currently present in the EU as ``57\% of companies say they would either start or increase their online sales to other EU Member States \cite{DSM}'' were it removed. Through consumer protection, enforcement authorities and EU-wide cooperation infringements are to become effectively manageable regardless of what entity in what member state did not comply with ``rules for online purchases \cite{DSM}'' to allow regional small and medium sized businesses to ``rely on their national laws \cite{DSM}'' and take full advantage of ``cross-border online sales of tangible goods \cite{DSM}.'' 
+
+\subsubsection{Better Online Access for Consumers and Businesses Across Europe}
+
+To provide European businesses with the opportunity to scale throughout all 28 markets, ``differences in contract and copyright law between Member States \cite{DSM}'' need to receive immediate attention as the goal is to create an incentive for the flow and purchase of ``goods and services online within the EU \cite{DSM}.'' The current situation leaves a very sizable list of complains, it is time to work on starting with the companies hindered by copyright disparity that makes business impractical or impossible the moment expansion to an internal EU-neighbor is considered. \\
+\begin{quote}
+``45\%  of  companies  considering  selling  digital  services  online  to  individuals  stated  that  copyright restrictions are preventing them from selling abroad. Less than 4\% of all video on demand content in the EU is accessible cross-border \cite{DSM}.''\\
+\end{quote}
+
+\noindent
+The specific step at which companies fail is the clearing of rights, that is the target of the reform further expanded on in later sections. The digital economy is and will continue to grow at ``double digit growth rates (around 12\%) \cite{DSM}'' and it is imperative to understand the need for immediate change to not fall behind and remain a significant global economy focused on highly trained and skilled labor as well as IT innovation because none of us and none of our companies want to be ``hampered because of an unclear legal framework and divergent approaches at national level \cite{DSM}.'' 
+
+\subsection{Copyright in the DSM} %REVIEW NEEDED === === === === ===reviewed===
+
+The aim is to create a fair and competitive internal market, and to this end attribution of those who create added value for the benefit of humanity is key. \\
+
+\noindent
+``Even though the objectives and principles laid down by the EU copyright framework remain sound, there is a need to adapt it to these new realities \cite{DSM}.'' The retort to this statement, ``the Commission will propose solutions which maximize the offers available to users and open up new opportunities for content creators, while preserving the financing of EU media and innovative content \cite{DSM}'' is specified to finally reveal a possible object of misunderstood legislative intent that the opportunity for capital gain for all creative authors at any platform and point in time will result in an improvement of service.
+
+\subsection{Creating the Right Conditions and a Level Playing Field for Advanced Digital Networks and Innovative Services}
+
+`Concern' is the most prudent word to start this discussion with as ``the most powerful platforms whose importance for other market participants is becoming increasingly critical \cite{DSM}'' are everything but shy and reserved when it comes to self-promotion and lobbying that to some are interchangeable with the words `propaganda' and `bribery'. The Commission states: \\
+\begin{quote}
+``Some online platforms have evolved to become players competing in many sectors of the economy and the way they use their market power raises a number of issues that warrant further analysis beyond the application of competition law in specific cases \cite{DSM}.'' 
+
+``The Big Data sector is growing by 40\% per year, seven times faster than the IT market \cite{DSM}.''\\
+\end{quote}
+
+\noindent
+Big Data is an intrinsic component of today's platforms that ``generate, accumulate and control an enormous amount of data about their customers and use algorithms to turn this into usable information \cite{DSM}.'' This state of affairs is not inherently wrong, only a part of their proceedings will be topic of our assessment and the primary drive for reform lays in the financial regulations they impose on participants dependent on them as they ``can exercise  significant  influence over how various players in the market are remunerated \cite{DSM}.'' 
+
+\subsection{Sub-Optimal Business Realities} 
+
+Confidence in business activities online is a key component companies have to take into account today, sadly ``[o]nly 22\% of Europeans have full trust in companies such as search engines, social networking sites and e-mail services \cite{DSM}.'' This discrepancy is mirrored by ``52.7\% of stakeholders [who] say that action against illegal content is often ineffective and lacks transparency \cite{DSM}.'' Public debate about possible negative effects of enforcement through inappropriate measures ``with due regard to their impact on the fundamental right to freedom of expression and information \cite{DSM}'' sparked not entirely unfounded concerns about ``rigorous procedures for removing illegal content while avoiding the take down of legal content \cite{DSM}'' as the introduction of ``intermediaries to exercise greater responsibility \cite{DSM}'' whose actions and possible lack of transparency remain an unknown, become intermediaries deciding what data gets filtered, and whose interests are enforced. To address these issues ``[l]egal certainty as to the allocation of liability is important for the roll-out of the Internet of Things \cite{DSM}'' and 5 new requirements for platforms are introduced: 
+\begin{enumerate}
+\item transparency e.g. in search results (involving paid for links and/or advertisement);
+\item platforms' usage of the information they collect;
+\item relations between platforms and suppliers;
+\item constraints on the ability of individuals and businesses to move from one platform to another;
+\item how best to tackle illegal content on the Internet.
+\end{enumerate} 
+
+\noindent
+As in the data protection field, free movement of personal data within the EU is not restricted and restrictions regarding its movement on other grounds are not addressed, it remains impossible to ``inhibit the free movement of personal data on grounds of privacy and personal data protection \cite{DSM}.'' In the light of these issues ``missing technological standards that are essential for supporting the digitisation of our industrial and services sectors \cite{DSM}'' are to facilitate the removal of ``unnecessary restrictions regarding the location of data within the EU \cite{DSM}.'' 
+
+\section{Upload-Filters as a Possible Solution}
+
+The emergence of new actors and business models intent on cross-border uses of copyright-protected works in the digital environment have materialized and precipitate intervention at EU level to avoid fragmentation. To this end, reduction of differences in national copyright regimes is key in order to ``enhance cross-border access to copyright-protected content services, facilitate new uses in the fields of research and education, and clarify the role of online services in the distribution of works and other subject-matter \cite{Copyright Reform}.'' \\
+
+\noindent
+On one hand, the users voice their opinion and concern and on the other, rightholders who are not remunerated fairly want effective action to be taken and enforcement of the law to take place, however, as ``[s]ome of these exceptions aim at achieving public policy objectives, such as research or education [...] [e]xceptions and limitations to copyright and neighboring rights are harmonized at EU level \cite{Copyright Reform}'' and provide three exceptions concerning cross-border uses regarding the preservation of cultural heritage, scientific research, and the field of education. Clearance of rights remains complex regarding out-of-commerce works and inside the marketplace of the Internet that distributes these, ``teachers and students will be able to take full advantage of digital technologies at all levels of education and cultural heritage institutions [...] will be supported in their efforts to preserve the cultural heritage, to the ultimate advantage of EU citizens \cite{Copyright Reform}.''\\
+
+\noindent
+Development of European creativity and production of creative content inside the current framework leaves rightholders unable to license their works appropriately so that it is ``necessary to guarantee that authors and rightholders receive a fair share of the value that is generated by the use of their works and other subject-matter \cite{Copyright Reform}.'' Measures aiming to improve the position of rightholders during remuneration negotiations are to improve both content creators on platforms relying on user-generated content due to their business models and a fair sharing of value ``to ensure the sustainability of the press publications sector [as] [p]ress publishers are facing difficulties in licensing their publications online and obtaining a fair share of the value they generate \cite{Copyright Reform}.'' The appropriate licensing of press works, recoupment of investment and enforcement of their rights are addressed by the proposal which provides ``a new right for press publishers aiming at facilitating online licensing \cite{Copyright Reform}.'' A weak bargaining position when licensing their rights and a lack of transparency regarding revenue resulting thereof requires ``better balanced contractual relationships between authors and performers and those to whom they assign their rights \cite{Copyright Reform}.'' 
+
+\subsection{Abstraction of the Problem}
+
+The aim is to fairly remunerate creators of copyright protected information goods that upload those onto platforms earning capital by making services available that are only possible due to user-generated content. In the context of the issue at hand, Articles 165-2(2,3,4,5,6) and 167-2(3,4) of the Treaty on the Functioning of the European Union (TFEU) are relevant as the counter-movement to the proposal fears that development of distance education, non-commercial cultural exchanges, literary creation, including in the audiovisual sector, and the participation of young people in democratic life in Europe will be negatively affected by the implemented ``measures, such as the use of effective content recognition technologies \cite{Copyright Reform}.'' \\
+
+\noindent
+As ``the transparency obligation will not apply when the administrative costs it implies are disproportionate in view of the generated revenues, [...] [t]he proposal includes several exceptions that aim at facilitating the use of copyright-protected content via new technologies \cite{Copyright Reform}'' and ``the obligation on online services, [...] only applies to information society services storing and giving access to large amounts of copyright-protected content uploaded by their users \cite{Copyright Reform}'', so that the reduction of transaction costs during the licensing process increases ``licensing revenues for rightholders \cite{Copyright Reform}.'' This impacts wider access to content, helps achieve a well-functioning marketplace for copyright, and adapts exceptions to the digital and cross-border environment. 
+
+\newpage
+\subsection{Impact Assessment}
+
+Article 16 of the copyright reform provides a dispute resolution mechanism, under which the transparency obligation of Article 14 guarantees that content creators receive ``sufficient information on the exploitation of their works and performances [...] notably as regards modes of exploitation, revenues generated and remuneration due, [...] [h]owever, in those cases where the administrative burden resulting from the obligation would be disproportionate, [...] Member States may adjust the obligation [...] when the contribution of the author or performer is not significant having regard to the overall work or performance \cite{Copyright Reform}.'' Furthermore, limitations each Member State has to provide include exceptions for ``digital uses of works and other subject-matter for the sole purpose of illustration for teaching \cite{Copyright Reform}'', protected under Article 4. Article 13 creates an obligation on information society service providers ``to prevent the availability on their services of content identified by rightholders in cooperation with the service providers \cite{Copyright Reform}'' should ``the functioning of agreements concluded with rightholders \cite{Copyright Reform}'' be infringed upon due to a ``lack of clarity as to whether those exceptions or limitations would apply where teaching is provided online and thereby at a distance \cite{Copyright Reform}'' prohibiting educational institutions where ``digital tools and resources are increasingly used at all education levels, in  particular to improve and enrich the learning experience \cite{Copyright Reform}.'' 
+
+\subsection{Abstract Solution}
+
+Content recognition technologies and their functioning are to become effective tools used to assess large amounts of copyright protected works. On one hand, rightholders are to provide the necessary data required, and on the other, service providers are to transparently inform them about the technologies deployed, their type, the way they operate and their ``success rate for the recognition of rightholders' content \cite{Copyright Reform}'' so that ``assessment of their appropriateness \cite{Copyright Reform}'' can be conducted prior to uploading of the content. \\
+
+\noindent
+To adequately assess the economic value of rights licensed in return for remuneration, this bidirectional transparency is required for rightholders to be able to achieve a ``balance in the system that governs the remuneration of authors and performers \cite{Copyright Reform}.'' The implementation of the transparency obligation leaves room for Member States to consult relevant stakeholders to determine sector-specific requirements and a transitional period is to be provided as ``each sector should be considered \cite{Copyright Reform}.'' An effectively enforced remuneration adjustment mechanism is key to hamper unfair exploitation of rightholders, who as ``[a]uthors and performers are often reluctant to enforce their rights against their contractual partners before a court or tribunal \cite{Copyright Reform}'' are currently in a weak contractual position regarding remuneration and adjustment mechanisms. This is to be provided by Member States through a dispute resolution mechanism that analyzes each and every set of ``specific circumstances of each case as well as of the specificities and practices of the different content sectors \cite{Copyright Reform}.'' 
+
+\subsection{Proposed Implementation} 
+
+Education and its betterment are a crucial consideration, and as long as it takes place at an educational establishment or through a secure electronic network only accessible by pupils, students and teaching staff while the work is accompanied by the authors name, if available, and an indication of the source, the ``use of works and other subject-matter for the sole purpose of illustration for teaching, to the extent justified by the non-commercial purpose to be achieved \cite{Copyright Reform}'' remains exempt from enforcement ``in digital and cross-border teaching activities \cite{Copyright Reform}.'' Works used in classrooms are to be handled and acknowledged regarding the rights granted by their respective license, to that end ``Member States [...] shall take the necessary measures to ensure appropriate availability and visibility of the licences authorizing the acts described [...] for educational establishments \cite{Copyright Reform}'', so they ``may provide for fair compensation for the harm incurred by the rightholders due to the use of their works or other subject-matter.'' This may ``occur solely in the Member State where the educational establishment is established \cite{Copyright Reform}.'' \\
+
+\noindent
+Outside of educational establishments, enforcement mechanisms mustn't deprive press publications in digital use ``of their right to exploit [...] works and other subject-matter independently from the press publication in which they are incorporated \cite{Copyright Reform}.'' In regards to claims of fair compensation, this constitutes Member States' ability to provide sufficiency to the legal basis of licensed rights to be able to enforce a claim for ``a share of the compensation for the uses of the work made under an exception or limitation to the transferred or licensed right \cite{Copyright Reform}.'' 
+
+\newpage
+\section{Contribution} 
+
+Making characters into law requires a consideration of every article in implied consequence towards dependability between all articles, the document and all its current dependencies are to be considered in relation to the proposed. The application of post-upload copyright protecting content recognition technologies on information society service providers for fair remuneration of content creators who license their content with intent for monetary gain is a fair goal, achievable by cross-provider collaboration between big platforms bound by transparency laws and legal enforcement, however the mandate requiring pre-upload content recognition is an unlikely and disproportionate implementation providing no effective enforcement due to possible legal content to become guilty until proven innocent and the backlash from the public. The concerns are founded and the proper considerations need to be undertaken under all possible aspects of debate as claims of censorship are unfounded due to the specifics of the decisions leaving sufficient room for Member States to implement mechanisms so that the implementation does not impose disproportionate cost, or loss of freedom of expression for any party involved. In light of the dangers upload-filters present, their consequences are by far the deciding factor for their dismissal and condemnation. The freedom to share through the Internet is not easily restricted, and the demand to do so creates incentives to find a workaround that is impossible to make subject of enforcement. If the regulatory body of an area of enforcement creates higher transaction costs for a service requested than usage of a cryptographically secured network, such networks will develop to provide a similar service with no possible oversight for content to be identified as legal or illegal. Furthermore, the proof-of-concept of any area of impossible enforcement, no matter how small or insignificant, will provide easily reproducible infrastructure that will scale with increase of regulatory burden. The Tor network gains a USP this way for a wider range of consumers, and with traffic and service variety increasing, it poses a greater threat for law enforcement to lack capabilities to monitor content that could either be out-of-commerce cultural heritage or misused content. If the only way to resolve a query for a service is through cryptography, end consumer black boxes will become common means used for trafficking of information across the Internet. Nevertheless, fear for this threat remains unfounded, as there is sufficient regulatory oversight and legislative restrictions within the proposal for enforcement of copyright in the Digital Single Market. 
+
+\section{Conclusions and Summary} \label{sum}
+One of the questions left unanswered is how any researcher, professor or graduate student can be motivated to share their work as an open educational resource without the monetary gain one would expect from such work. Oftentimes, it is a complex issue to release a work, having spent months or years on it under an open license, which would then be put online for everybody's usage. As an incentive, authors can consider their research as `eye-opening' or necessary to their respective fields, since it is not required for a second team to discover the same thing again, but instead be accessible for further development to whoever can make even better advancements on the matter. \\
+
+\noindent
+Inside the Digital Single Market however, clear licensing of content is to allow network economic goods in the education sector to reshape teaching and learning in a number of ways.
+\begin{enumerate}
+\item it allows for the existence of service providers who implement clearly licensed Open Educational Resources into classrooms, providing better quality resources to be at the disposal of teaching staff;
+\item it facilitates the possibility for entirely new business models that take advantage of resources already licensed with the sole purpose of illustration for teaching at their respective platform;
+\item it opens the possibility for the two to merge into an undertaking where educational establishments license services that allow for the betterment of the learning experience;
+\item it encourages establishments to provide additional materials with prospect of fair remuneration, should their rightholders materials be monetized by other contractual partners of the platform;
+\item it adds value to the service with establishments participation in creation, evaluation, and service feedback each time the networks usage is expanded while transaction costs of switching to the system are progressively better dealt with due to the service providers rising experience and economies of scale;
+\item it creates opportunity for complementary goods such as extracurricular classes paid by the hour that can be conducted either by the same teaching staff or certified freelancers using the same materials as the school to further expand on particular interests of a given student or revisit areas where the learning experience was lackluster;
+\end{enumerate}
+
+\noindent
+Finally, the rising integration of the B2B system allows for service providers to expand cross-border and therefore become a EU-wide monopolist improving materials used, profits generated, and student scores achieved, cannibalizing fragmented markets while the cost of transitioning away rises and establishments are locked into the system. \\
+
+\newpage
+\begin{thebibliography}{}
+\bibitem{basicguide} N. Butcher, A. Kanwar, and S. Uvali\'{c}-Trumbi\'{c}, ``A basic guide to Open Educational Resources (OER)''. Vancouver; Paris: Commonwealth of Learning; UNESCO. Section for Higher Education, 2011.
+
+\bibitem{el-1} M. M. Organero, C. D. Kloos, and P. M. Merino, ``Personalized Service-Oriented E-Learning Environments,'' IEEE Internet Computing, vol. 14, no. 2, pp. 62–67, Mar. 2010. DOI: 10.1109/MIC.2009.121 
+
+\bibitem{el-2} M. Anshari, Y. Alas, and L. S. Guan, ``Developing online learning resources: Big data, social networks, and cloud computing to support pervasive knowledge,'' Educ Inf Technol, vol. 21, no. 6, pp. 1663–1677, Nov. 2016. DOI: 10.1007/s10639-015-9407-3
+
+\bibitem{el-3} S. de Freitas and M. Oliver, ``Does E-learning Policy Drive Change in Higher Education?: A case study relating models of organisational change to e-learning implementation,'' Journal of Higher Education Policy and Management, vol. 27, no. 1, pp. 81–96, Mar. 2005. DOI: 10.1080/13600800500046255
+
+\bibitem{open-courseware} UNESCO, ``Forum on the Impact of Open Courseware for Higher Education in Developing Countries,'' Paris, 2002. [Online]. Available: \url{http://unesdoc.unesco.org/ulis/cgi-bin/ulis.pl?catno=128515}. [Accessed: 09.07.2018]
+
+\bibitem{OCW} H. Abelson, ``The Creation of OpenCourseWare at MIT,'' Journal of Science Education and Technology, vol. 17, no. 2, pp. 164--174, Apr. 2008. DOI: 10.1007/s10956-007-9060-8
+
+\bibitem{sustain} S. Downes, ``Models for Sustainable Open Educational Resources,'' Interdisciplinary Journal of E-Learning and Learning Objects, vol. 3, no. 1, pp. 29--44, Jan. 2007. DOI: 10.28945/384
+
+\bibitem{learners} R. Felder and J. Spurlin, ``Applications, reliability and validity of the Index of Learning Styles,'' International Journal of Engineering Education, vol. 21, pp. 103--112, Jan. 2005.
+
+\bibitem{outcomes} A. Feldstein, M. Martin, A. Hudson, K. Warren, J. Hilton, and D. Wiley, ``Open Textbooks and Increased Student Access and Outcomes,'' European Journal of Open, Distance and E-Learning, vol. 2, 2012.
+
+\bibitem{fwk} J. L. H. Iii and D. Wiley, ``Open access textbooks and financial sustainability: A case study on Flat World Knowledge,'' The International Review of Research in Open and Distributed Learning, vol. 12, no. 5, pp. 18--26, Jun. 2011. DOI: 10.19173/irrodl.v12i5.960
+
+\bibitem{kawachi} P. Kawachi, ``Quality Assurance Guidelines for Open Educational Resources: TIPS Framework,'' Commonwealth Educational Media Centre for Asia (CEMCA), 2014.
+
+\bibitem{higher-ed} L. Yuan, S. MacNeill, and W. G. Kraan, ``Open Educational Resources - opportunities and challenges for higher education,'' 2008. [Online]. Available: \url{http://wiki.cetis.ac.uk/images/0/0b/OER_Briefing_Paper.pdf}. [Accessed: 18.07.2018]
+
+\bibitem{conversion} P. Sterne and N. Herring, ``LinuxWorld: The Conversion Model,'' Linux World, Dec. 2005. [Online]. Available: \url{http://de.sys-con.com/read/158863.htm}. [Accessed: 23.07.2018]
+
+\bibitem{ed-gap} C. Geith and K. Vignare, ``Access to Education with Online Learning and Open Educational Resources: Can They Close the Gap?,'' Journal of Asynchronous Learning Networks, vol. 12, no. 1, pp. 105--126, Feb. 2008. DOI: 10.24059/olj.v12i1.39
+
+\bibitem{africa} J. Thakrar, F. Wolfenden, and D. Zinn, ``Harnessing Open Educational Resources to the Challenges of Teacher Education in Sub-Saharan Africa,'' The International Review of Research in Open and Distributed Learning, vol. 10, no. 4, Sep. 2009. DOI: 10.19173/irrodl.v10i4.705
+
+\bibitem{sust-h-ed} D. Wiley, ``On the Sustainability of Open Educational Resource Initiatives in Higher Education,'' OECD’s Centre for Educational Research and Innovation (CERI), 2007.
+
+\bibitem{elearning} F. Concannon, A. Flynn, and Mark Campbell.  ``What campus‐based students think about the quality and benefits of e‐learning,'' British journal of educational technology vol. 36, no. 3, pp. 501-512, 2005.
+
+\bibitem{ed-usa} I. E. Allen and J. Seaman, ``Opening the Curriculum: Open Educational Resources in U.S. Higher Education,'' Babson Survey Research Group, 2014.
+
+\bibitem{arguments} J. Hylén, ``Open educational resources: Opportunities and challenges,'' Organisation for Economic Co-operation and Development, 2006.
+
+\bibitem{mw-wikiversity} C. Lawler, ``Action research as a congruent methodology for understanding wikis: the case of Wikiversity,'' Journal of Interactive Media in Education, 2008. DOI: 10.5334/2008-6
+
+\bibitem{khan-ac} R. Murphy, L. Gallagher, A. E. Krumm, J. Mislevy and A. Hafter, ``Research on the Use of Khan Academy in Schools: Research Brief,'' Menlo Park: SRI International, 2014. [Online]. Available: \url{http://www.sri.com/sites/default/files/publications/2014-03-07_implementation_briefing.pdf}
+
+\bibitem{Copyright Reform} ``Copyright in the Digital Single Market.'' [Online]. Available: \url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593} [Accessed: 15.07.2018]
+
+\bibitem{ATC} ``Affordable telecommunications services -- users' rights.'' [Online]. Available: \url{https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=LEGISSUM:l24108h}. [Accessed: 15.07.2018].
+
+\bibitem{JCJ} ``A New Start for Europe: My Agenda for Jobs, Growth, Fairness and Democratic Change.'' [Online]. Available: \url{https://www.eesc.europa.eu/resources/docs/jean-claude-juncker---political-guidelines.pdf}. [Accessed: 15.07.2018]
+
+\bibitem{DSM} ``A Digital Single Market Strategy for Europe.'' [Online]. Available: \url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52015DC0192}. [Accessed: 15.07.2018]
+
+\bibitem{harmonisation} R. Burrell and A. Coleman, ``Copyright Exceptions: The Digital Impact,'' Cambridge: Cambridge University Press, 2005.
+
+\end{thebibliography}
+
+\end{document}
